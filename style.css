@@ -1,0 +1,153 @@
+body {
+    background: #181818;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #00bfff;
+}
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #242424;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+h2 {
+    color: #00bfff;
+    margin-top: 0;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 12px;
+}
+a {
+    color: #00bfff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.menu {
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    background: #222;
+}
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.menu a {
+    color: #00bfff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.menu a:hover {
+    background: #00bfff;
+    color: #222;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #222;
+    color: #f2f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+thead {
+    background: #00bfff;
+    color: #222;
+}
+tfoot {
+    background: #181818;
+    font-style: italic;
+}
+form {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #00bfff;
+    background: #181818;
+    color: #f2f2f2;
+}
+button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #00bfff;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background: #0099cc;
+}
+footer {
+    text-align: center;
+    padding: 16px 0;
+    background: #222;
+    color: #00bfff;
+    margin-top: 40px;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    .menu li {
+        display: block;
+        margin: 8px 0;
+    }
+    table, th, td {
+        font-size: 0.9em;
+    }
+    form {
+        padding: 10px;
+    }
+}
