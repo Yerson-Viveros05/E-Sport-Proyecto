@@ -1,0 +1,149 @@
+.historia{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+}
+.encabezado{
+   background-color: #8A8481;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 15px;
+  
+}
+.titulo-header{
+    color: #00ffff;
+}
+hr{
+    width: 40%;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: green;
+}
+.titulo-principal{
+    color: white;
+    text-align: center;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    text-align: center;
+}
+.img-centrar{
+    text-align: center;
+}
+.img-intro{
+    width: 900px;
+    height: auto;
+}
+.tabla-contenidos{
+    border: 2px solid white;
+    padding: 12px;
+    max-width: 400px;
+    margin: 12px auto;
+    float: left;
+    margin-left: 20px;
+}
+.tabla-contenidos h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    color: white;
+}
+.tabla-contenidos ol{
+    padding-left: 24px;
+}
+.tabla-contenidos li{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: white;
+    
+}
+.tabla-contenidos a{
+   text-decoration: none;
+   color: white;
+}
+.tabla-contenidos a:hover{
+    color: #0f0;
+}
+.primer-contenido{
+    clear: both ;
+    margin-top: 20%;
+    margin-left: 24px;
+}
+.segundo-contenido h2{
+margin-left: 24px;
+}
+.foto-gaming-estadio{
+    width: 800px;
+    height: auto;
+}
+.img-torneo{
+    width: 600px;
+    height: auto;
+}
+.contenedor-tercerimg{
+text-align: center;
+}
+h5{
+    color: white;
+    margin-left: 24px;
+}
+/* Estilos para el contenedor de las tarjetas */
+.tercer-contenido {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea en pantallas pequeñas */
+    justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+/* Estilos para cada tarjeta individual */
+.tarjeta-juego {
+    background-color: #1a1a1a; /* Un color de fondo más oscuro */
+    border: 1px solid #333; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    width: 300px; /* Ancho fijo para las tarjetas */
+    text-align: center;
+}
+
+.tarjeta-juego h3 {
+    margin-top: 0;
+    color: #fff; /* Color del texto del título */
+}
+
+.tarjeta-juego img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-juego p {
+    color: #ccc; /* Color del texto de la descripción */
+    font-size: 14px;
+}
+.titulo-juegos{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+    gap: 30px; /* Un poco más de espacio entre las tarjetas */
+}
