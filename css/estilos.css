@@ -1,22 +1,30 @@
+
 .historia{
-    padding: 0;
+   padding: 0px;
     margin: 0;
     box-sizing: border-box;
-    background-color: #0d0d0d;
+    background-color: #f5f5f5; 
 }
 .encabezado{
-   background-color: #8A8481;
+   background-color: #262525;
    display: flex;
    justify-content: space-around;
    align-items: center;
    padding: 15px;
-  
+
+   position: sticky;
+   top: 0;
+   z-index: 1000;
 }
 .titulo-header{
-    color: #00ffff;
+    color: white;
 }
 hr{
-    width: 40%;
+    border: none;
+    height: 1px;
+    background-color: #555;
+    width: 60%;
+    margin: 30px;
 }
 nav{
     display: flex;
@@ -24,21 +32,35 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 nav a:hover{
-    color: green;
+    color: #ffa837;
 }
 .titulo-principal{
-    color: white;
+    color: black;
     text-align: center;
 }
 h2{
-    color: white;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
 }
 p{
-    color: white;
-    text-align: center;
+    line-height: 1.6; /*mejorar la legibilidad*/
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;    
+}
+h5{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .img-centrar{
     text-align: center;
@@ -48,36 +70,35 @@ p{
     height: auto;
 }
 .tabla-contenidos{
-    border: 2px solid white;
-    padding: 12px;
+    border: 2px solid black;
+    padding: 20px;
     max-width: 400px;
-    margin: 12px auto;
-    float: left;
-    margin-left: 20px;
+    margin: 20px auto;
+    float: none;
 }
 .tabla-contenidos h2{
-    font-size: 20px;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid #777;
     margin-bottom: 15px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 8px;
-    color: white;
 }
 .tabla-contenidos ol{
-    padding-left: 24px;
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: left;
 }
 .tabla-contenidos li{
     margin: 8px 0;
     cursor: pointer;
     transition: color 0.3s;
-    color: white;
-    
+    color: black;
 }
 .tabla-contenidos a{
    text-decoration: none;
-   color: white;
+   color: black;
 }
 .tabla-contenidos a:hover{
-    color: #0f0;
+    color: #ffa837;
 }
 .primer-contenido{
     clear: both ;
@@ -89,6 +110,9 @@ margin-left: 24px;
 }
 .imgSports{
     text-align: center;
+}
+.primer-contenido, .segundo-contenido h2, h5{
+    margin-left: 0;
 }
 .foto-gaming-estadio{
     width: 800px;
@@ -102,7 +126,7 @@ margin-left: 24px;
 text-align: center;
 }
 h5{
-    color: white;
+    color: black;
     margin-left: 24px;
 }
 /* Estilos para el contenedor de las tarjetas */
@@ -115,19 +139,23 @@ h5{
 }
 /* Estilos para cada tarjeta individual */
 .tarjeta-juego {
-    background-color: #1a1a1a; /* Un color de fondo más oscuro */
-    border: 1px solid #333; /* Borde sutil */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 20px;
-    width: 300px; /* Ancho fijo para las tarjetas */
-    text-align: center;
-}
+     background-color: #1a1a1a;
+     border: 1px solid #333;
+     border-radius: 8px;
+     padding: 20px;
+     width: 300px;
+     text-align: center;
+     transition: transform  0.3s ease, box-shadow 0.3s ease;
 
+}
+.tarjeta-juego:hover{
+    transform: scale(1.05); /*el mouse se agranda un poco al pasar por encima*/
+    box-shadow: 0 px 20px rgb(0, 0,0, 0.5);
+}
 .tarjeta-juego h3 {
     margin-top: 0;
-    color: #fff; /* Color del texto del título */
+    color: #f0f0f0 /* Color del texto del título */
 }
-
 .tarjeta-juego img {
     max-width: 100%;
     height: 200px;
@@ -136,11 +164,11 @@ h5{
 }
 
 .tarjeta-juego p {
-    color: #ccc; /* Color del texto de la descripción */
+    color: #f0f0f0; /* Color del texto de la descripción */
     font-size: 14px;
 }
 .titulo-juegos{
-    color: white;
+    color: black;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -150,3 +178,82 @@ h5{
     justify-content: center; /* Centra las tarjetas en el contenedor */
     gap: 30px; /* Un poco más de espacio entre las tarjetas */
 }
+.titulo-torneos{
+    color: black;
+    margin-left: 12px;
+}
+.video-centro{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.mi-footer {
+    background-color: #282828; /* El color de fondo oscuro que ya tenías */
+    color: white; /* Color general del texto en el footer */
+    padding: 30px 20px; /* Aumentamos el padding para más altura interna */
+    margin-top: 80px; /* AQUÍ AJUSTAMOS LA SEPARACIÓN del footer del contenido anterior */
+    text-align: center; /* Centramos el texto dentro del footer si no hay flexbox directo */
+}
+
+/* Estilos para el contenedor interno del footer que usará Flexbox */
+.footer-grid {
+    display: flex;
+    justify-content: space-around; /* Distribuye las columnas uniformemente */
+    align-items: flex-start; /* Alinea el contenido de las columnas arriba */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del footer */
+    margin: 0 auto; /* Centra el contenedor si tiene un max-width */
+    flex-wrap: wrap; /* Para que las columnas se apilen en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilos para las secciones de enlaces (Categoría de juegos, Empresarial) */
+.links-footer h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px; /* Ajustamos un poco el tamaño */
+    color: #ffa837; /* Puedes usar tu color de hover aquí para los títulos */
+}
+
+.links-footer ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+.links-footer a {
+    display: block;
+    color: #707070; /* Color original del enlace */
+    text-decoration: none;
+    margin-bottom: 7px;
+    font-size: 15px; /* Ajustamos un poco el tamaño */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+.links-footer a:hover {
+    color: #ffa837; /* Color de hover */
+}
+
+/* Estilos para la nueva columna de información adicional */
+.info-adicional-footer {
+    text-align: center;
+    max-width: 300px; /* Ancho máximo para el texto */
+    margin-top: 20px; /* Pequeño margen superior para que no esté pegado en móviles */
+}
+
+.info-adicional-footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.info-adicional-footer p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6; /* Espacio entre líneas */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el video */
+.video-centro {
+    text-align: center;
+    margin-bottom: 40px; /* Añadimos un margen inferior para separar del footer */
+}
+
