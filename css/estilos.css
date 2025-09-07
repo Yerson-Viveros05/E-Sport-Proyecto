@@ -273,7 +273,6 @@ h5{
     max-width: 800px;
 }
 /*responsive para el celular*/
-@media (max-width: 576px) {
     @media (max-width: 576px) {
     .titulo-principal {
         font-size: 22px;
@@ -335,4 +334,4 @@ h5{
         font-size: 12px;
     }
 }
-}
+
