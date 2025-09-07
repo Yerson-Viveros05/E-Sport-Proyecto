@@ -169,20 +169,3 @@ footer {
         height: auto; /* asegura que no se corte */
     }
 }
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-}
