@@ -319,8 +319,9 @@ h5{
 
     .video-centro iframe {
         width: 100%;
+        height: auto;
         aspect-ratio: 16/9;
-        border: 3px solid #ff5733;
+        border: 2px solid #ff5733;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
@@ -338,5 +339,17 @@ h5{
     .footer-grid p {
         font-size: 12px;
     }
+    .img-intro{
+        width: 100%;
+        height: auto;
+    }
+    .foto-gaming-estadio{
+        width: 100%;
+        height: auto;
+    }
+   .img-torneo{
+    width: 100%;
+    height: auto;
+   }
 }
 
